@@ -38,7 +38,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Vel"
+            android:text="@string/vel"
             android:id="@+id/textView"
             android:layout_weight="8" />
 
@@ -68,7 +68,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Tono"
+            android:text="@string/tono"
             android:id="@+id/tono"
             android:layout_weight="8" />
 

@@ -70,8 +70,6 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         barraVelocidad.setProgress(2);
         barraTono.setProgress(2);
         barraVelocidad.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-
-
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 //la Seekbar siempre empieza en cero, si queremos que el valor mínimo sea otro podemos modificarlo
@@ -91,15 +89,12 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
 
         });
         barraTono.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-
-
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 //la Seekbar siempre empieza en cero, si queremos que el valor mínimo sea otro podemos modificarlo
                 tono=progress ;
                 tvTono.setText( tono+ "");
             }
-
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
 
