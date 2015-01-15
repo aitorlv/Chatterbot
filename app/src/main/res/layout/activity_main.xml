@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grupo"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/es"
+            android:id="@+id/rbes"
+            android:layout_weight="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/en"
+            android:id="@+id/rben"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Vel"
+            android:id="@+id/textView"
+            android:layout_weight="8" />
+
+        <SeekBar
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:max="4"
+            android:id="@+id/barvel"
+            android:indeterminate="false"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tvVel"
+            android:layout_weight="8" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Tono"
+            android:id="@+id/tono"
+            android:layout_weight="8" />
+
+        <SeekBar
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:max="4"
+            android:id="@+id/barraTono"
+            android:indeterminate="false"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tvtono"
+            android:layout_weight="8" />
+    </LinearLayout>
+
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/etconv"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:focusable="false"
+            android:editable="false"
+            android:background="#00ffffff" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnhablar"
+            android:onClick="hablar"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
+
